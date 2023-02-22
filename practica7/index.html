@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7</title>
+</head>
+<body>
+
+    <p id="Lista"></p>
+
+    <script>
+        let lista = document.getElementById("Lista");
+
+        let texto = 'Hola mi nombre es "Daniel"';
+        console.log(texto);
+
+        console.log(`cadena de texto en la linea 1
+        
+        cadena de texto en la linea 2`);
+
+        let a= 5;
+        let b= 10;
+        console.log(`Suma es: ${a+b}
+        y
+        Multiplicacion es: ${a*b}`);
+
+        let precio = 100;
+        const IVA = 0.16;
+
+        let total= `Total: ${(precio + (precio*IVA)).toFixed(2)}`;
+        console.log(total);
+
+        let persona = "Mike";
+        let edad = 28;
+
+        function miFuncion(cadenas, personaExp, edadExp){
+            console.log(cadenas);
+            console.log(cadenas[0]);
+            console.log(personaExp);
+            console.log(edadExp);
+
+         /*   if (edadExp > 18)
+                return "Es mayor de edad";
+                else
+                return "Es menor de edad";
+
+*/
+        return edadExp > 18 ? "Es mayor de edad" : "Es menor de edad";
+        }
+                
+            
+
+        const resultado = miFuncion(`El señor ${persona} tiene una edad de ${edad} años`);
+        console.log(resultado);
+
+        let titulo = "Mejores cantantes mujeres";
+        let cantantes = ["Shakira", "Rihanna", "Bellakath"];
+        let html = `<h2>${titulo}</h2>`
+        
+        html += "<ul>";
+        for (let cantante of cantantes){
+            html += `<li>${cantante}</li>`;
+        }
+
+        html += "</ul>";
+        lista.innerHTML = html;
+
+
+
+    </script>
+    
+</body>
+</html>
