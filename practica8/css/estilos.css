@@ -1,0 +1,25 @@
+:root{
+    --amarillo: #fff000;
+    --blanco: #ffffff;
+   }
+    
+   body {
+    background-color: var(--amarillo);
+   }
+    
+   h2 {
+    border-bottom: 2px solid var(--amarillo);
+   }
+    
+   .container {
+    color: var(--amarillo);;
+    background-color: var(--blanco);;
+    padding: 15px;
+   }
+    
+   button {
+    background-color: var(--blanco);
+    color: var(--amarillo);
+    border: 1px solid var(--amarillo);
+    padding: 5px;
+   }
